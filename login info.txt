@@ -1,8 +1,12 @@
-Student Dasboard:
-username: brahamjot2004
-Email: brahmjot23@gndpoly.org
+Admin Panel:
+username 1: brahamjot2004
+Email 1: brahmjot23@gndpoly.org
 Password: 123456789
 
-Admin Panel:
+username 2: gkshah23
+Email 2: gkshah23@gndpoly.org
+Password: 123
+
+Student Dasboard:
 Username: brahamjot2004
 Password: 123456789
