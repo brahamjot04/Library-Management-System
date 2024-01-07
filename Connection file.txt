@@ -1,0 +1,5 @@
+1. Admin_Panel/assets/setup/env.php
+2. Admin_Panel/home/DataSource.php
+3. Admin_Panel/home/includes/db.inc.php
+4. dig_lib/assets/setup/env.php
+5. StuWebPortal/assets/setup/env.php
