@@ -6,7 +6,7 @@
 define('TITLE', "Admin Panel");
 include '../assets/layouts/header.php';
 check_verified();
-error_reporting(0);
+// error_reporting(0);
 
 $qry = "SELECT sr_no FROM lib_news ORDER BY sr_no DESC";
 $result = mysqli_query($conn, $qry);
