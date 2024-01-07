@@ -111,8 +111,7 @@ CREATE TABLE `admin_users` (
 
 INSERT INTO `admin_users` (`id`, `username`, `email`, `password`, `first_name`, `last_name`, `gender`, `headline`, `bio`, `profile_image`, `verified_at`, `created_at`, `updated_at`, `deleted_at`, `last_login_at`) VALUES
 (0, 'supahot', 'supa@hot.com', '$2y$10$jhIOk4NVdBile/NwhAU9We/f0aoohx.cG9CizmIALRz0aCKJa5s6a', 'Supahot', 'Soverysupahot', 'm', 'Headline of a supa hot user', 'This is the bio of a supa hot user. Now i will say needless stuff to make this longer so this looks like a bio and not anything other than a bio.', '_defaultUser.png', NULL, '2022-11-20 15:56:49', '2022-11-20 15:56:49', NULL, NULL),
-(31, 'brahamjot2004', 'brahmjot23@gndpoly.org', 'UPDATE `admin_users` SET `password` = `$2y$10$TbLnQHbLOTel/Vl59wxVluoCiH6Y1fvUh0y1u.DR5p8TclP7u4ANG`, `deleted_at` = NULL WHERE `admin_users`.`id` = 31;', 'Brahamjot', 'Singh', 'm', 'Test', 'Test', '_defaultUser.jpg', '2022-11-20 16:35:20', '2022-11-20 16:27:46', '2023-05-08 08:19:14', NULL, '2023-05-08 08:19:14'),
-(32, 'gkshah23', 'gkshah23@gndpoly.org', '$2y$10$ERHIaVfAGVO89/T6/qHIcuoMuKEnKQr1kGvSKwUUpiajXwkB3nxPu', 'Gagan Kumar', 'Shah', NULL, NULL, NULL, '_defaultUser.png', '2023-05-07 11:45:10', '2023-05-07 11:24:58', '2023-05-08 08:37:34', NULL, '2023-05-08 08:37:34');
+(31, 'brahamjot04', 'brahmjot23@gndpoly.org', 'UPDATE `admin_users` SET `password` = `$2y$10$TbLnQHbLOTel/Vl59wxVluoCiH6Y1fvUh0y1u.DR5p8TclP7u4ANG`, `deleted_at` = NULL WHERE `admin_users`.`id` = 31;', 'Brahamjot', 'Singh', 'm', 'Test', 'Test', '_defaultUser.jpg', '2022-11-20 16:35:20', '2022-11-20 16:27:46', '2023-05-08 08:19:14', NULL, '2023-05-08 08:19:14');
 
 -- --------------------------------------------------------
 
