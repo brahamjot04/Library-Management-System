@@ -1,0 +1,49 @@
+/* Digital Library Background Gradient Start */
+.bg-digital-gradient {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(45deg,  #35a5f5, #1040ff, #7642ff, #23d5ab);
+  /* background: linear-gradient(45deg, #d2001a, #7642ff,#f48e21,#23d5ab); */
+  background-size: 300% 300%;
+  animation: color 90s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+/* Digital Library Background Gradient End */
+
+.text-slide {
+
+  height: 60vh;
+  display: grid;
+  place-items: center;
+  font-family: "Arial Black";
+  font-size: 3vw;
+}
+
+
+.dept-block {
+  margin-top: -70px;
+  position: relative;
+  z-index: 2;
+}
+
+.pop:hover {
+  border-top-color: rgb(0, 179, 255) !important;
+  transform: scale(1.03);
+  transition: all 0.3s;
+}
+
+.box {
+  border-top-color: rgb(0, 179, 255) !important;
+}
+

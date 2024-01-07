@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* body { */
+	/* background-color: white; */
+/* } */
+i {
+	font-size: 2.4rem;
+}
+.footer {
+	padding-block: 10px;
+	background-color: #151823;
+	color: #a6a6a6;
+}
+.footer__container {
+	max-width: 1160px;
+	margin: auto;
+	padding: 0 15px;
+}
+.footer__top {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	row-gap: 20px;
+}
+.footer__title {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.footer__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.footer__list-item {
+	list-style: none;
+	text-decoration: none;
+}
+.footer__list-link {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.25s;
+}
+.footer__list-link2 {
+	text-decoration: none;
+	color: whitesmoke;
+	/* transition: color .25s; */
+}
+.footer__list-link2:hover {
+	color: whitesmoke;
+}
+.footer__list-link:hover {
+	color: #fff;
+}
+.footer__divider {
+	margin-block: 25px;
+	border: none;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer__bottom {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	text-align: center;
+	position: center;
+}
+.footer__bottom .footer__list {
+	flex-direction: row;
+}
+.footer__bottom .creditsme::before {
+	content: '© ' attr(data-date)
+		' - All Rights Reserved - GNDPC | Designed By Computer Department';
+}
+
+.footer__bottom:hover .creditsme::before {
+	content: '© ' attr(data-date)
+		' - All Rights Reserved - GNDPC | Designed By Abhishek Pandey(1001)';
+}
