@@ -35,6 +35,6 @@ if (isset($_COOKIE['rememberme'])) {
 session_unset();
 session_destroy();
 
-echo "<script> window.location.href = '../login/'; </script>";
-// header("Location: ../login/");
+// echo "<script> window.location.href = '../login/'; </script>";
+header("Location: ../login/");
 exit();

@@ -10,8 +10,8 @@ check_logged_out();
 
 if (!isset($_POST['loginsubmit'])) {
 
-    echo "<script>window.location.href = '../'; </script>";
-    // header("Location: ../");
+    // echo "<script>window.location.href = '../'; </script>";
+    header("Location: ../");
     exit();
 } else {
 
@@ -36,8 +36,8 @@ if (!isset($_POST['loginsubmit'])) {
     if (!verify_csrf_token()) {
 
         $_SESSION['STATUS']['loginstatus'] = 'Request could not be validated';
-        echo "<script>window.location.href = '../'; </script>";
-        // header("Location: ../");
+        // echo "<script>window.location.href = '../'; </script>";
+        header("Location: ../");
         exit();
     }
 
@@ -50,8 +50,8 @@ if (!isset($_POST['loginsubmit'])) {
     if (empty($username) || empty($password)) {
 
         $_SESSION['STATUS']['loginstatus'] = 'fields cannot be empty';
-        echo "<script>window.location.href = '../'; </script>";
-        // header("Location: ../");
+        // echo "<script>window.location.href = '../'; </script>";
+        header("Location: ../");
         exit();
     } else {
 
@@ -66,8 +66,8 @@ if (!isset($_POST['loginsubmit'])) {
         if (!mysqli_stmt_prepare($stmt, $sql)) {
 
             $_SESSION['ERRORS']['sqlerror'] = 'SQL ERROR';
-            echo "<script>window.location.href = '../'; </script>";
-            // header("Location: ../");
+            // echo "<script>window.location.href = '../'; </script>";
+            header("Location: ../");
             exit();
         } else {
 
@@ -89,8 +89,8 @@ if (!isset($_POST['loginsubmit'])) {
         if (!mysqli_stmt_prepare($stmt, $sql)) {
 
             $_SESSION['ERRORS']['scripterror'] = 'SQL ERROR';
-            echo "<script>window.location.href = '../'; </script>";
-            // header("Location: ../");
+            // echo "<script>window.location.href = '../'; </script>";
+            header("Location: ../");
             exit();
         } else {
 
@@ -106,8 +106,8 @@ if (!isset($_POST['loginsubmit'])) {
                 if ($pwdCheck == false) {
 
                     $_SESSION['ERRORS']['wrongpassword'] = 'wrong password';
-                    echo "<script>window.location.href = '../'; </script>";
-                    // header("Location: ../");
+                    // echo "<script>window.location.href = '../'; </script>";
+                    header("Location: ../");
                     exit();
                 } else if ($pwdCheck == true) {
 
@@ -156,8 +156,8 @@ if (!isset($_POST['loginsubmit'])) {
                         if (!mysqli_stmt_prepare($stmt, $sql)) {
 
                             $_SESSION['ERRORS']['scripterror'] = 'SQL ERROR';
-                            echo "<script>window.location.href = '../'; </script>";
-                            // header("Location: ../");
+                            // echo "<script>window.location.href = '../'; </script>";
+                            header("Location: ../");
                             exit();
                         } else {
 
@@ -181,8 +181,8 @@ if (!isset($_POST['loginsubmit'])) {
                         if (!mysqli_stmt_prepare($stmt, $sql)) {
 
                             $_SESSION['ERRORS']['scripterror'] = 'SQL ERROR';
-                            echo "<script>window.location.href = '../'; </script>";
-                            // header("Location: ../");
+                            // echo "<script>window.location.href = '../'; </script>";
+                            header("Location: ../");
                             exit();
                         } else {
 
@@ -192,15 +192,15 @@ if (!isset($_POST['loginsubmit'])) {
                         }
                     }
 
-                    echo "<script>window.location.href = '../../home/'; </script>";
-                    // header("Location: ../../home/");
+                    // echo "<script>window.location.href = '../../home/'; </script>";
+                    header("Location: ../../home/");
                     exit();
                 }
             } else {
 
                 $_SESSION['ERRORS']['nouser'] = 'username does not exist';
-                echo "<script>window.location.href = '../'; </script>";
-                // header("Location: ../");
+                // echo "<script>window.location.href = '../'; </script>";
+                header("Location: ../");
                 exit();
             }
         }
