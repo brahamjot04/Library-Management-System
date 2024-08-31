@@ -1,15 +1,20 @@
 <?php
+$uri = "mysql://avnadmin:AVNS_jP_7hbtjNEEGP1Gmk4k@mysql-2c746119-brahamjot-lms.h.aivencloud.com:11032/defaultdb?ssl-mode=REQUIRED";
+$fields = parse_url($uri);
+
+
 //Database connection.
-$conn = MySQLi_connect(
-   "localhost", //Server host name.
-   // "162.241.218.223", //Server host name.
-   "root", //Database username.
-   // "gndpolyo_admin", //Database username.
-   "", //Database password.
-   // "qwerty@1234", //Database password.
-   "gndpolyo_web" //Database name or anything you would like to call it.
-);
-//Check connection
-if (MySQLi_connect_errno()) {
-   echo "Failed to connect to MySQL: " . MySQLi_connect_error();
+$conn = "mysql:";
+$conn .= "host=" . $fields["host"];
+$conn .= ";port=" . $fields["port"];;
+$conn .= ";dbname=defaultdb";
+$conn .= ";sslmode=verify-ca;sslrootcert=ca.pem";
+
+try {
+   $db = new PDO($conn, $fields["user"], $fields["pass"]);
+
+   $stmt = $db->query("SELECT VERSION()");
+   print($stmt->fetch()[0]);
+} catch (Exception $e) {
+   echo "Error: " . $e->getMessage();
 }
