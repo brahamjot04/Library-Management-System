@@ -1,5 +1,8 @@
 <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 define('TITLE', "Student");
 include '../assets/layouts/header.php';

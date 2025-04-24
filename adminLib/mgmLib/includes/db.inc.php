@@ -5,7 +5,7 @@ $conn = MySQLi_connect(
    // "162.241.218.223", //Server host name.
    "root", //Database username.
    // "gndpolyo_admin", //Database username.
-   "", //Database password.
+   "root", //Database password.
    // "qwerty@1234", //Database password.
    "gndpolyo_web" //Database name or anything you would like to call it.
 );

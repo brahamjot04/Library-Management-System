@@ -15,7 +15,7 @@
   // $databaseName = "gndpolyo_web";
   $hostname1 = "localhost";
   $Username1 = "root";
-  $pass1 = "";
+  $pass1 = "root";
   $databaseName1 = "gndpolyo_web";
   $conn = mysqli_connect($hostname1, $Username1, $pass1, $databaseName1);
   // $conn = mysqli_connect($hostname, $Username, $pass, $databaseName);

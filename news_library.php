@@ -3,7 +3,7 @@
     <?php
     $host = "localhost";
     $user = "root";
-    $pass = "";
+    $pass = "root";
     $dB = "gndpolyo_web";
 
     $con = mysqli_connect($host, $user, $pass, $dB);

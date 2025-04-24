@@ -1,6 +1,3 @@
-<?php
-include 'admin/functions.php';
-?>
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +10,7 @@ include 'admin/functions.php';
 	<!-- Bootstrap Links Start -->
 
 	<!-- Bootstrap CSS Start -->
-	<!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<!-- Booststrap CSS End -->
 
@@ -25,9 +22,9 @@ include 'admin/functions.php';
 	<!-- Bootstrap Links End -->
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<link rel="stylesheet" href="assets/swiper/swiper.min.css">
-	<link rel="stylesheet" href="assets/lightgallery/css/lightgallery.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/assets/swiper/swiper.min.css">
+	<link rel="stylesheet" href="/assets/lightgallery/css/lightgallery.min.css">
+	<link rel="stylesheet" href="/style.css">
 	<link rel="icon" type="image/x-icon" href="img/images/logo.png">
 </head>
 
@@ -292,4 +289,3 @@ include 'admin/functions.php';
 </body>
 
 </html>
-

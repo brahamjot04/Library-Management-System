@@ -3,33 +3,49 @@
 define('TITLE', "Issue Book");
 include '../assets/layouts/header.php';
 check_verified();
-error_reporting(0);
+// error_reporting(0);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 
 // include_once 'includes/db.inc.php';
 $id = $_GET['s_id'];
 $id2 = $_GET['accession_no'];
-$query = "select * from library_membership_form where Student_Id=$id";
-$query2 = "select * from admin_books where Accession_No=$id2";
+$query = "SELECT * from library_membership_form where Roll_Number=$id";
+// echo $query;
+// echo "<br>";
+$query2 = "SELECT * from admin_books where Accession_No=$id2";
+// echo $query2;
 $data = mysqli_query($conn, $query);
 $data2 = mysqli_query($conn, $query2);
-while (($res = mysqli_fetch_array($data)) and  ($res2 = mysqli_fetch_array($data2))) {
-    // for student
-    $S_Id = $res[14];
-    $R_no = $res[8];
-    $S_name = $res[2];
-    $Dept_Name = $res[5];
-    $S_category = $res[11];
-    $Email = $res[10];
-    // for book
-    $Accession_no = $res2[0];
-    $Book_name = $res2[4];
-    $Author_name = $res2[5];
-    $Pub_name = $res2[6];
-    $Edition = $res2[8];
-    $Year = $res2[9];
-    $Volume = $res2[10];
+$res = mysqli_fetch_array($data);
+$res2 = mysqli_fetch_array($data2);
+if ($res and $res2) {
+    // For student
+    $S_Id = $res['Student_Id'];
+    $R_no = $res['Roll_Number'];
+    $S_name = $res['S_Name'];
+    $Dept_Name = $res['Department'];
+    $S_category = $res['Category'];
+    $Email = $res['email'];
+
+    // For book
+    $Accession_no = $res2['Accession_No'];
+    $Book_name = $res2['Book_Name'];
+    $Author_name = $res2['Author_Name'];
+    $Pub_name = $res2['Publisher_Name'];
+    $Edition = $res2['Edition'];
+    $Year = $res2['Year'];
+    $Volume = $res2['Volume'];
+
+    // Now do your insert or display logic
+} else {
+    echo "<script>alert('Either student or book not found');</script>";
 }
+
+
+
 ?>
 
 <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">

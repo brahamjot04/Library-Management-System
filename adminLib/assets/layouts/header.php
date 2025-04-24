@@ -18,11 +18,11 @@ check_remember_me();
 <head>
   <style>
     * {
-      -webkit-user-select: none;
+      /* -webkit-user-select: none; */
       /* Safari */
-      -ms-user-select: none;
+      /* -ms-user-select: none; */
       /* IE 10 and IE 11 */
-      user-select: none;
+      /* user-select: none; */
       /* Standard syntax */
     }
 

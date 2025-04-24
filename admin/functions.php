@@ -18,7 +18,7 @@ function dateFormat($date)
 //Date Conversion Function End
 
 //Connection To DB Start
-$conngndpc = mysqli_connect("localhost", "root", "", "gndpolyo_web");
+$conngndpc = mysqli_connect("localhost", "root", "root", "gndpolyo_web");
 // $conngndpc = mysqli_connect("162.241.218.223", "gndpolyo_admin", "qwerty@1234", "gndpolyo_web");
 // if (!$conngndpc) {
 // 	echo "<script>alert('Something Went Wrong!')</script>";

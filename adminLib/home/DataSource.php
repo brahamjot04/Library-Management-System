@@ -17,23 +17,22 @@ namespace Phppot;
  *
  * @version 2.5 - recordCount function added
  */
-$uri = "mysql://avnadmin:AVNS_jP_7hbtjNEEGP1Gmk4k@mysql-2c746119-brahamjot-lms.h.aivencloud.com:11032/defaultdb?ssl-mode=REQUIRED";
-$fields = parse_url($uri);
+
 class DataSource
 {
 
     // PHP 7.1.0 visibility modifiers are allowed for class constants.
     // when using above 7.1.0, declare the below constants as private
-    const HOST = $fields['host'];
+    const HOST = 'localhost';
     // const HOST = '162.241.218.223';
 
-    const USERNAME = $fields['user'];
+    const USERNAME = 'root';
     // const USERNAME = 'gndpolyo_admin';
 
-    const PASSWORD = $fields['pass'];
+    const PASSWORD = 'root';
     // const PASSWORD = 'qwerty@1234';
 
-    const DATABASENAME = 'defaultdb';
+    const DATABASENAME = 'gndpolyo_web';
 
     private $conn;
 
