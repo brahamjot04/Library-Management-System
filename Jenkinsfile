@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/your-php-repo.git'
+                git 'https://github.com/brahamjot04/Library-Management-System.git'
             }
         }
 
